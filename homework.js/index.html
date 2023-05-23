@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>
+        Racer's Vengence
+    </title>
+    <link rel="stylesheet" href="./static/main.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+               <form onsubmit="event.preventDefault();OnFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidator-Error">This field is required.</label>
+                        <input type="text" name="full Name" id="full Name">
+                    </div>
+                    <div>
+                        <label>Car Type*</label>
+                        <input type="text" name="Car Type" id="Car Type">
+                    </div>
+                    <div>
+                        <label>Birth City*</label>
+                        <input type="text" name="Birth City" id="Birth City">
+                    </div>
+                    <div>
+                        <label>Birth Date*</label>
+                        <input type="text" name="Birth Date" id="Birth Date">
+                    </div>
+                    <div>
+                        <label>Miles per Hour*</label>
+                        <input type="text" name="Miles Per Hour" id="Miles Per Hour">
+                    </div>
+                    <div>
+                        <label>Birth State*</label>
+                        <input type="text" name="Birth State" id="Birth State">
+                    </div>
+                    <div>
+                        <label>Time*</label>
+                        <input type="text" name="Time" id="Time">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+               <table class="list" id="DriverList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Car</th>
+                        <th>Birth City</th>
+                        <th>Birth Date</th>
+                        <th>Miles Per Hour</th>
+                        <th>Birth State</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+               </table>
+            </td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="./script.js" defer></script>
+</body>
+</html>
